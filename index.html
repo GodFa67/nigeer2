@@ -1,60 +1,87 @@
 <!DOCTYPE html>
-<html lang ="zh-Hant-TW">
-</html>
+<html lang="zh-Hant-TW">
 <head>
-<meta charset = "utf-8">
-<meta name="viewport" content="width=device-width, initial scale=1.">
- <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neko Neko Neko</title>
+  
+<style>
+    /* 全體預設樣式 */
+    body {
+      background-color: #b4b4b4; /* 全網頁背景色 */
+      text-align: center;        /* 全網頁文字置中 */
+      font-family: "微軟正黑體", sans-serif;
+    }
 
+    /* 通用的框框樣式（所有框框都會套用） */
+    .media-container {
+      border: 2px solid #ff1a1a;
+      border-radius: 20px;
+      padding: 15px;
+      margin: 15px auto;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(255, 207, 207); /* 預設是白色 */
+      max-width: 500px;
+    }
+
+    /* --- 這裡就是你的「單獨調色」指令 --- */
+    .box1 .media-container {
+      background-color: #81caff; /* 只有第一個框框會變成淺藍色 */
+      border-color: #2196f3;     /* 只有第一個框框邊框會變藍色 */
+    }
+
+    /* 文字置中 */
+    h1, p {text-align: center;}
+  </style>
 </head>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">Neko</a></li>
-      <li><a href="#">Neegr</a></li>
-      <li><a href="#">何を見ているのですか</a></li>
-    </ul>
-    </nav>
-    </header>
-<main>
+
 <body>
-<!--標題-->>
-<h1>Neko Neko Neko </h1>
-<!--超連結-->>
-<a href="http://www.bdsh.ntpc.edu.tw">juice jews juice </a>
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-<div id="wrap">
+  <header>
+    <h1>Neko Neko Neko</h1>
+  </header>
+
   <main>
-    <div class="a">  
-        <!--內文-->>
-        <p>This is Light O, a neko lover</p>
-        <!--圖片-->>
-        <img src="img/neko.png" width=500 >
+    <a href="http://www.bdsh.ntpc.edu.tw">juice jews juice</a>
+
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <div class="box1">
+      <p>This is Light O, a neko lover</p>
+      <div class="media-container">
+        <img src="img/neko.png" width="500">
+      </div>
     </div>
-    <div class="a">
-        <p>This is FERRARI's only hope to win a grand prix in 2026</p>
-        <img src="img/macarena wing.jpg" width=500 >
+
+    <div class="box2">
+      <p>This is FERRARI's only hope to win a grand prix in 2026</p>
+      <div class="media-container">
+        <img src="img/macarena wing.jpg" width="500">
+      </div>
+    </div>
+
+    <aside class="side">
+      <p>何してるの</p>
+    </aside>
+
+    <div>
+      <p>Kim Jung Goon</p>
+      <div class="media-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TJptHmTqF4c?si=KeR7Y_cLFOiUsniM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div>
+      <p>We Are Charlie Kirk Kiryu</p>
+      <div class="media-container">
+        <div class="media-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/f5XNplSFiTo?si=nTGgiLHORkFfP7qp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </main>
-  <aside>
-    <p>何してるの</p>
-  </aside>   
-
-
-<p>Kim Jung Goon</p>
-<!--嵌入連結-->>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TJptHmTqF4c?si=KeR7Y_cLFOiUsniM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<p>We Are Charlie Kirk Kiryu</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/f5XNplSFiTo?si=nTGgiLHORkFfP7qp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 </body>
 </html>
-
